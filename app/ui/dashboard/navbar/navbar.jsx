@@ -10,6 +10,8 @@ import {
   MdSearch,
 } from "react-icons/md";
 
+import { FaDiscord } from "react-icons/fa6";
+
 const Navbar = () => {
   const pathName = usePathname()
   return (
@@ -23,7 +25,9 @@ const Navbar = () => {
         <div className={styles.icon}>
           <MdOutlineChat size={20}/>
           <MdNotifications size={20}/>
-          <MdPublic  size={20}/>
+          <a href='https://discord.gg/QUW3Yah5aT'>
+          <FaDiscord size={20}/>
+          </a>
         </div>
       </div>
     </div>
