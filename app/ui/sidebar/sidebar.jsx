@@ -80,7 +80,7 @@ const menuItems = [
 const Sidebar = () => {
   return (
     <div className={styles.container}>
-      <ul>
+      <ul className={styles.list}>
       {menuItems.map((cat) => {
         return(
           <li key={cat.title}>
@@ -92,6 +92,9 @@ const Sidebar = () => {
         )
       })}
       </ul>
+      <button className={styles.logout}>
+        <MdLogout/>
+        Logout</button>
     </div>
   )
 }
