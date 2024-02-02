@@ -9,7 +9,8 @@
   
   .container:hover,
   .active {
-    background-color: black;
+    color: black;
+    background-color: rgb(181, 181, 181);
     margin-left: 5px;
     margin-right: 5px;
   }
